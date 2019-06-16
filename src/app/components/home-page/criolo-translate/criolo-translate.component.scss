@@ -1,0 +1,62 @@
+.from-language-chose,
+.from-language-text {
+    display: block;
+}
+
+.to-language-chose,
+.to-language-text {
+    display: block;
+}
+
+.from-language {
+    margin: 20px 0px 20px 10px;
+    width: 47%;
+    display: inline-table;
+}
+
+.to-language {
+    margin: 20px 10px 20px 4px;
+    width: 48%;
+    display: inline-table;
+}
+
+.hint-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.form-section {
+    margin: 20px 10px;
+    border: 1px solid #f5f5f5;
+    border-radius: 5px;
+}
+
+.btns-area {
+    text-align: center;
+}
+
+.confirm-translate {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background: #0079BC;
+    border: 0;
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    color: white;
+    border-radius: 30px;
+}
+
+.confirm-translate:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+}
+
+.hint-title {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.cv-flag-icon {
+    margin: 0px 10px;
+}
