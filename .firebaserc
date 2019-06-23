@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "hints-criolo",
+    "site": "criolo-translator",
     "public": "public",
     ...
   }
