@@ -1,0 +1,7 @@
+{
+  "hosting": {
+    "site": "hints-criolo",
+    "public": "public",
+    ...
+  }
+}

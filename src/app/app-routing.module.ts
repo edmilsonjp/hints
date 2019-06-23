@@ -7,7 +7,7 @@ const routes: Routes = [
   { path: 'home', component: HomePageComponent },
 
   { path: 'error', component: ErrorPageComponent },
-  { path: '**', component: ErrorPageComponent }
+  { path: '**', component: HomePageComponent }
 ];
 
 @NgModule({
