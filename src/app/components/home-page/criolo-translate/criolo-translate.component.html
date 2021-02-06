@@ -8,30 +8,32 @@
       <div class="from-language">
         <mat-form-field class="from-language-chose">
           <mat-label>From</mat-label>
-          <mat-select [value]="translateModel.languageIn?.id">
-            <mat-option *ngFor="let language of translateModel.languages" [value]="language.id">
+          <mat-select [value]="translateModel.languageIn" [(ngModel)]="translateModel.languageIn" >
+            <mat-option *ngFor="let language of translateModel.languages" [value]="language">
               {{language.description}}
             </mat-option>
           </mat-select>
         </mat-form-field>
 
         <mat-form-field class="from-language-text">
-          <textarea matInput class="from-language-text-area" [value]="translateModel.languageIn?.result" placeholder="" size="60"></textarea>
+          <textarea matInput class="from-language-text-area" [value]="translateModel.languageIn?.result" 
+          [(ngModel)]="translateModel.languageIn.result" placeholder="" size="60"></textarea>
         </mat-form-field>
       </div>
 
       <div class="to-language">
         <mat-form-field class="to-language-chose">
           <mat-label>TO</mat-label>
-          <mat-select [value]="translateModel.languageOut?.id">
-            <mat-option *ngFor="let language of translateModel.languages" [value]="language.id">
+          <mat-select [value]="translateModel.languageOut" [(ngModel)]="translateModel.languageOut">
+            <mat-option *ngFor="let language of translateModel.languages" [value]="language">
               {{language.description}}
             </mat-option>
           </mat-select>
         </mat-form-field>
 
         <mat-form-field class="to-language-text">
-          <textarea matInput class="to-language-text-area" [value]="translateModel.languageOut?.result" placeholder="" size="60"></textarea>
+          <textarea matInput class="to-language-text-area" [value]="translateModel.languageOut?.result" 
+          [(ngModel)]="translateModel.languageOut.result" placeholder="" size="60"></textarea>
         </mat-form-field>
 
       </div>

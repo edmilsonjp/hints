@@ -20,16 +20,30 @@ export class CrioloTranslateComponent implements OnInit {
     languageModel.description = 'Criolo';
     languageModel.id = 'CV';
     this.translateModel.languages[0] = languageModel;
+    this.translateModel.languageIn = languageModel;
 
     languageModel = new LanguageModel();
     languageModel.description = 'Português';
     languageModel.id = 'PT';
+    this.translateModel.languageOut = languageModel;
 
     this.translateModel.languages[1] = languageModel;
   }
 
   translate() {
-    this.trasnlateService.translate(this.translateModel).subscribe();
+    if (this.translateModel.languageIn.id === this.translateModel.languageOut.id) {
+      this.translateModel.languageOut.result = this.translateModel.languageIn.result;
+      return;
+    }
+
+    this.trasnlateService.translate(this.translateModel).subscribe(
+      (sucess: any) => {
+
+      },
+      (error: any) => {
+        throw error;
+      }
+    );
   }
 
 }

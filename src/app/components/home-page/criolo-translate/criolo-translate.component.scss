@@ -9,14 +9,14 @@
 }
 
 .from-language {
-    margin: 20px 0px 20px 10px;
-    width: 47%;
+    margin: 20px 10px 20px 10px;
+    width: calc(50% - 20px);
     display: inline-table;
 }
 
 .to-language {
-    margin: 20px 10px 20px 4px;
-    width: 48%;
+    margin: 20px 10px 20px 10px;
+    width: calc(50% - 20px);
     display: inline-table;
 }
 
@@ -30,6 +30,7 @@
     margin: 20px 10px;
     border: 1px solid #f5f5f5;
     border-radius: 5px;
+    display: flex;
 }
 
 .btns-area {
